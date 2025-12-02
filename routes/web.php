@@ -1,11 +1,27 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Web3AuthController;
+
+// Web3 API Routes
+Route::prefix('api/web3')->group(function () {
+    Route::post('/nonce', [Web3AuthController::class, 'getNonce'])->name('web3.nonce');
+    Route::post('/verify', [Web3AuthController::class, 'verify'])->name('web3.verify');
+    Route::middleware('auth:sanctum')->group(function () {
+        Route::get('/me', [Web3AuthController::class, 'me'])->name('web3.me');
+        Route::post('/logout', [Web3AuthController::class, 'logout'])->name('web3.logout');
+    });
+});
 
 // Home route
 Route::get('/', function () {
     return view('index');
 })->name('index');
+
+// Wallet Connect route
+Route::get('/wallet-connect', function () {
+    return view('wallet-connect');
+})->name('wallet-connect');
 
 // Main pages routes
 Route::get('/mining', function () { return view('mining'); })->name('mining');
@@ -45,3 +61,7 @@ Route::get('/telegram', function () { return view('telegram'); })->name('telegra
 Route::get('/license', function () { return view('license'); })->name('license');
 Route::get('/faqs', function () { return view('faqs'); })->name('faqs');
 Route::get('/lang', function () { return view('lang'); })->name('lang');
+
+// Web3 Login pages
+Route::get('/web3-login', function () { return view('web3-login'); })->name('web3-login');
+Route::get('/dashboard', function () { return view('dashboard'); })->name('dashboard')->middleware('auth:sanctum');
