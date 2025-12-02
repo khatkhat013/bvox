@@ -1,4 +1,4 @@
-const apiurl = "https://api.bvoxf.com/api";
+const apiurl = window.location.origin + "/api";
 document.title = "Bvox";
 
 

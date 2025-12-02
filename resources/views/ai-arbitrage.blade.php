@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <title>Bvox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/ai-arbitrage.css') }}">
-    <script src="{{ asset('js/jquery.js') }}" type="text/javascript" charset="utf-8"></script>
-    <script src="{{ asset('js/config.js') }}" type="text/javascript" charset="utf-8"></script>
-    <script src="{{ asset('js/pako.min.js') }}"></script>
-    <script src="{{ asset('js/js.cookie.min.js') }}"></script>
-    <script src="{{ asset('js/web3.min.js') }}"></script>
-    <script src="{{ asset('js/web3model.min.js') }}"></script>
-    <script src="{{ asset('js/web3provider.js') }}"></script>
-    <script src="{{ asset('js/fp.min.js') }}"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/ai-arbitrage.css">
+    <script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/config.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/pako.min.js"></script>
+    <script src="/js/js.cookie.min.js"></script>
+    <script src="/js/web3.min.js"></script>
+    <script src="/js/web3model.min.js"></script>
+    <script src="/js/web3provider.js"></script>
+    <script src="/js/fp.min.js"></script>
     <link rel="shortcut icon" href="https://www.bvoxf.com/favicon.ico">
-    <meta property="og:image" content="{{ asset('img/banner4.png') }}">
+    <meta property="og:image" content="/img/banner4.png">
     <style>
         html {
             background: linear-gradient(to bottom, #2b5279 5%, #6485a4 60%);
@@ -516,16 +516,16 @@
     <div class="y-hd" id="y-hd">
         <div class="yc-header">
             <a href="{{ route('index') }}" class="y-fanhui">
-                <img src="{{ asset('img/fanhui.png') }}">
+                <img src="/img/fanhui.png">
             </a>
             <div class="y-title" data-translate="量化">Arbitrage</div>
             <a href="{{ route('ai-record') }}" class="yy-tr">
-                <img src="{{ asset('img/ls.png') }}">
+                <img src="/img/ls.png">
             </a>
         </div>
         <div class="y-ai-k">
             <div class="y-ai-k-in">
-                <img class="y-ai-jqr" src="{{ asset('img/jqr.png') }}">
+                <img class="y-ai-jqr" src="/img/jqr.png">
                 <div class="y-ai-k-l">
                     <p data-translate="持仓">Position</p>
                     <h2>
@@ -537,7 +537,7 @@
             </div>
             <div class="y-ai-sy">
                 <div class="y-ai-sy-z">
-                    <img src="{{ asset('img/zsy.png') }}">
+                    <img src="/img/zsy.png">
                     <div>
                         <span data-translate="总收益">Total income</span>
                         <p>
@@ -546,7 +546,7 @@
                     </div>
                 </div>
                 <div class="y-ai-sy-j">
-                    <img src="{{ asset('img/dtsy.png') }}">
+                    <img src="/img/dtsy.png">
                     <div>
                         <span data-translate="今日收益">Daily income</span>
                         <p>
@@ -564,7 +564,7 @@
                 <div class="y-ai-btit">Arbitrage products</div>
                 <div class="y-ai-be">
                     <span class="y-ai-be-1">
-                        <img src="{{ asset('img/tl1.jpg') }}">
+                        <img src="/img/tl1.jpg">
                     </span>
                     <span class="y-ai-be-2">1 <b>DAY</b></span>
                     <span class="y-ai-be-3"><b>Smart Plan</b> A</span>
@@ -584,10 +584,10 @@
                 <div class="y-ai-bbtit">Arbitrage type</div>
                 <div class="y-ai-typet">
                     <div class="y-ai-typetl">
-                        <img src="{{ asset('img/8.png') }}"><img src="{{ asset('img/9.png') }}"><img src="{{ asset('img/12.png') }}"><img src="{{ asset('img/4.png') }}"><img src="{{ asset('img/7.png') }}">
+                        <img src="/img/8.png"><img src="/img/9.png"><img src="/img/12.png"><img src="/img/4.png"><img src="/img/7.png">
                     </div>
-                    <a href="{{ route('ai-plan') }}?id=1" class="y-ai-typetr">
-                        <img src="{{ asset('img/qianj.png') }}">
+                    <a href="{{ route('ai-buy') }}?id=1" class="y-ai-typetr">
+                        <img src="/img/qianj.png">
                     </a>
                 </div>
             </div>
@@ -596,7 +596,7 @@
                 <div class="y-ai-btit">Arbitrage products</div>
                 <div class="y-ai-be">
                     <span class="y-ai-be-1">
-                        <img src="{{ asset('img/tl1.jpg') }}">
+                        <img src="/img/tl1.jpg">
                     </span>
                     <span class="y-ai-be-2">3 <b>DAY</b></span>
                     <span class="y-ai-be-3"><b>Smart Plan</b> B</span>
@@ -616,10 +616,10 @@
                 <div class="y-ai-bbtit">Arbitrage type</div>
                 <div class="y-ai-typet">
                     <div class="y-ai-typetl">
-                        <img src="{{ asset('img/12.png') }}"><img src="{{ asset('img/10.png') }}"><img src="{{ asset('img/4.png') }}"><img src="{{ asset('img/9.png') }}"><img src="{{ asset('img/5.png') }}">
+                        <img src="/img/12.png"><img src="/img/10.png"><img src="/img/4.png"><img src="/img/9.png"><img src="/img/5.png">
                     </div>
-                    <a href="{{ route('ai-plan') }}?id=2" class="y-ai-typetr">
-                        <img src="{{ asset('img/qianj.png') }}">
+                    <a href="{{ route('ai-buy') }}?id=2" class="y-ai-typetr">
+                        <img src="/img/qianj.png">
                     </a>
                 </div>
             </div>
@@ -628,7 +628,7 @@
                 <div class="y-ai-btit">Arbitrage products</div>
                 <div class="y-ai-be">
                     <span class="y-ai-be-1">
-                        <img src="{{ asset('img/tl1.jpg') }}">
+                        <img src="/img/tl1.jpg">
                     </span>
                     <span class="y-ai-be-2">7 <b>DAY</b></span>
                     <span class="y-ai-be-3"><b>Smart Plan</b> C</span>
@@ -637,7 +637,7 @@
                     <span>1</span>
                     <span>Times</span>
                 </div>
-                <div class="y-ai-yd"><img src="{{ asset('img/yy.png') }}">Appointment</div>
+                <div class="y-ai-yd"><img src="/img/yy.png">Appointment</div>
                 <div class="y-ai-bbtit">Quantity</div>
                 <div class="y-ai-bbje">
                     $30001.00-$100000.00
@@ -649,10 +649,10 @@
                 <div class="y-ai-bbtit">Arbitrage type</div>
                 <div class="y-ai-typet">
                     <div class="y-ai-typetl">
-                        <img src="{{ asset('img/6.png') }}"><img src="{{ asset('img/7.png') }}"><img src="{{ asset('img/3.png') }}"><img src="{{ asset('img/4.png') }}"><img src="{{ asset('img/10.png') }}">
+                        <img src="/img/6.png"><img src="/img/7.png"><img src="/img/3.png"><img src="/img/4.png"><img src="/img/10.png">
                     </div>
-                    <a href="{{ route('ai-plan') }}?id=3" class="y-ai-typetr">
-                        <img src="{{ asset('img/qianj.png') }}">
+                    <a href="{{ route('ai-buy') }}?id=3" class="y-ai-typetr">
+                        <img src="/img/qianj.png">
                     </a>
                 </div>
             </div>
@@ -661,7 +661,7 @@
                 <div class="y-ai-btit">Arbitrage products</div>
                 <div class="y-ai-be">
                     <span class="y-ai-be-1">
-                        <img src="{{ asset('img/tl1.jpg') }}">
+                        <img src="/img/tl1.jpg">
                     </span>
                     <span class="y-ai-be-2">15 <b>DAY</b></span>
                     <span class="y-ai-be-3"><b>Smart Plan</b> D</span>
@@ -670,7 +670,7 @@
                     <span>1</span>
                     <span>Times</span>
                 </div>
-                <div class="y-ai-yd"><img src="{{ asset('img/yy.png') }}">Appointment</div>
+                <div class="y-ai-yd"><img src="/img/yy.png">Appointment</div>
                 <div class="y-ai-bbtit">Quantity</div>
                 <div class="y-ai-bbje">
                     $100001.00-$500000.00
@@ -682,10 +682,10 @@
                 <div class="y-ai-bbtit">Arbitrage type</div>
                 <div class="y-ai-typet">
                     <div class="y-ai-typetl">
-                        <img src="{{ asset('img/12.png') }}"><img src="{{ asset('img/1.png') }}"><img src="{{ asset('img/11.png') }}"><img src="{{ asset('img/5.png') }}"><img src="{{ asset('img/8.png') }}">
+                        <img src="/img/12.png"><img src="/img/1.png"><img src="/img/11.png"><img src="/img/5.png"><img src="/img/8.png">
                     </div>
-                    <a href="{{ route('ai-plan') }}?id=4" class="y-ai-typetr">
-                        <img src="{{ asset('img/qianj.png') }}">
+                    <a href="{{ route('ai-buy') }}?id=4" class="y-ai-typetr">
+                        <img src="/img/qianj.png">
                     </a>
                 </div>
             </div>
@@ -694,7 +694,7 @@
                 <div class="y-ai-btit">Arbitrage products</div>
                 <div class="y-ai-be">
                     <span class="y-ai-be-1">
-                        <img src="{{ asset('img/tl2.jpg') }}">
+                        <img src="/img/tl2.jpg">
                     </span>
                     <span class="y-ai-be-2">30 <b>DAY</b></span>
                     <span class="y-ai-be-3"><b>Smart Plan</b> VIP</span>
@@ -703,7 +703,7 @@
                     <span>1</span>
                     <span>Times</span>
                 </div>
-                <div class="y-ai-yd"><img src="{{ asset('img/yy.png') }}">Appointment</div>
+                <div class="y-ai-yd"><img src="/img/yy.png">Appointment</div>
                 <div class="y-ai-bbtit">Quantity</div>
                 <div class="y-ai-bbje">
                     $500001.00-$1000000.00
@@ -715,10 +715,10 @@
                 <div class="y-ai-bbtit">Arbitrage type</div>
                 <div class="y-ai-typet">
                     <div class="y-ai-typetl">
-                        <img src="{{ asset('img/11.png') }}"><img src="{{ asset('img/3.png') }}"><img src="{{ asset('img/6.png') }}"><img src="{{ asset('img/12.png') }}"><img src="{{ asset('img/7.png') }}">
+                        <img src="/img/11.png"><img src="/img/3.png"><img src="/img/6.png"><img src="/img/12.png"><img src="/img/7.png">
                     </div>
-                    <a href="{{ route('ai-plan') }}?id=5" class="y-ai-typetr">
-                        <img src="{{ asset('img/qianj.png') }}">
+                    <a href="{{ route('ai-buy') }}?id=5" class="y-ai-typetr">
+                        <img src="/img/qianj.png">
                     </a>
                 </div>
             </div>
@@ -748,7 +748,7 @@
                                 <div class="y-ai-btit">${gy('套利产品')}</div>
                                 <div class="y-ai-be">
                                     <span class="y-ai-be-1">
-                                        <img src="{{ asset('img/') }}${item.tubiao}" />
+                                        <img src="/img/${item.tubiao}" />
                                     </span>
                                     <span class="y-ai-be-2">${item.zhouqi} <b>${gy('天')}</b></span>
                                     <span class="y-ai-be-3"><b>${gy('智能计划')}</b> ${item.biaoti.split(' ')[2]}</span>
@@ -758,7 +758,7 @@
                                     <span>${gy('次')}</span>
                                 </div>`;
                         if (item.yugou === 1) {
-                            html += `<div class="y-ai-yd"><img src="{{ asset('img/yy.png') }}"/>${gy('预约')}</div>`;
+                            html += `<div class="y-ai-yd"><img src="/img/yy.png"/>${gy('预约')}</div>`;
                         }
                         html += `
                                 <div class="y-ai-bbtit">${gy('数量')}</div>
@@ -772,10 +772,10 @@
                                 <div class="y-ai-bbtit">${gy('套利种类')}</div>
                                 <div class="y-ai-typet">
                                     <div class="y-ai-typetl">
-                                        ${item.tupian.split(',').map(num => `<img src="{{ asset('img/') }}${num}.png">`).join('')}
+                                        ${item.tupian.split(',').map(num => `<img src="/img/${num}.png">`).join('')}
                                     </div>
-                                    <a href="{{ route('ai-plan') }}?id=${item.id}" class="y-ai-typetr">
-                                        <img src="{{ asset('img/qianj.png') }}" />
+                                    <a href="{{ route('ai-buy') }}?id=${item.id}" class="y-ai-typetr">
+                                        <img src="/img/qianj.png" />
                                     </a>
                                 </div>
                             </div>

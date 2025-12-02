@@ -16,7 +16,7 @@
     <script src="/js/fp.min.js"></script>
     <link rel="shortcut icon" href="https://www.bvoxf.com/favicon.ico">
     <meta property="og:image" content="/favicon.png">
-    <link rel="manifest" href="https://www.bvoxf.com/manifest.json">
+
     <style>
         html{
             background: linear-gradient(to bottom, #2b5279 5%, #6485a4 60%);
@@ -51,7 +51,7 @@
             <img src="/img/kf.png">
         </div>
         <div class="y-kf-bottom">
-            <a href="https://t.me/BVOX_service" class="y-kf-bbox">
+            <a href="https://t.me/BVOXTech_Support" class="y-kf-bbox">
                 <img src="/img/telegram.jpg">
                 <span>Telegram</span>
             </a>

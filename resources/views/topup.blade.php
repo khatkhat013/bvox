@@ -4,18 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Bvox</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-	<link rel="stylesheet" href="{{ asset('css/topup.css') }}">
-	<script src="{{ asset('js/jquery.js') }}" type="text/javascript" charset="utf-8"></script>
-	<script src="{{ asset('js/config.js') }}" type="text/javascript" charset="utf-8"></script>
-	<script src="{{ asset('js/pako.min.js') }}"></script>
-	<script src="{{ asset('js/js.cookie.min.js') }}"></script>
-	<script src="{{ asset('js/web3.min.js') }}"></script>
-	<script src="{{ asset('js/web3model.min.js') }}"></script>
-	<script src="{{ asset('js/web3provider.js') }}"></script>
-	<script src="{{ asset('js/fp.min.js') }}"></script>
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/topup.css">
+	<script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/config.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/pako.min.js"></script>
+	<script src="/js/js.cookie.min.js"></script>
+	<script src="/js/web3.min.js"></script>
+	<script src="/js/web3model.min.js"></script>
+	<script src="/js/web3provider.js"></script>
+	<script src="/js/fp.min.js"></script>
 	<link rel="shortcut icon" href="https://www.bvoxf.com/favicon.ico">
-	<meta property="og:image" content="{{ asset('img/banner4.png') }}">
+	<meta property="og:image" content="/img/banner4.png">
 	<style>
 		html{
 			background: linear-gradient(to bottom, #2b5279 5%, #6485a4 60%);
@@ -515,18 +515,18 @@
 	<div class="y-hd">
 		<div class="yc-header">
 			<a href="{{ route('assets') }}" class="y-fanhui">
-				<img src="{{ asset('img/fanhui.png') }}">
+				<img src="/img/fanhui.png">
 			</a>
 			<div class="y-title" data-translate="充值">Top-up</div>
 			<a href="{{ route('topup-record') }}" class="yy-tr">
-				<img src="{{ asset('img/ls.png') }}">
+				<img src="/img/ls.png">
 			</a>
 		</div>
 	</div>
 	<div class="y-tu">
 		<div class="y-tu-tit">USDT</div>
 		<div class="y-tu-top">
-			<img id="y-bitu" src="{{ asset('img/0xd8dD63e1A50A54e43F13C5E559660872083Db59B.png') }}">
+			<img id="y-bitu" src="/img/0xd8dD63e1A50A54e43F13C5E559660872083Db59B.png">
 			<p id="y-bilian">0xd8dD63e1A50A54e43F13C5E559660872083Db59B</p>
 			<div class="y-copydz">
 				<span data-translate="复制地址">Copy address</span>
@@ -534,7 +534,7 @@
 		</div>
 		<div class="y-tu-bottom">
 			<div id="upload-container">
-				<label for="file-upload" id="upload-btn"><img src="{{ asset('img/image.png') }}"></label>
+				<label for="file-upload" id="upload-btn"><img src="/img/image.png"></label>
 				<input type="file" id="file-upload" accept="image/*" style="display: none;">
 				<div id="preview-container"></div>
 			</div>
@@ -561,14 +561,14 @@
 		$(document).ready(function() {
 			$('.y-tu-tit').text(biming.toLocaleUpperCase());
 			if(biming.toLocaleUpperCase() == 'BTC'){
-				$('#y-bitu').attr('src','{{ asset("img/1GhgvwxA7VRYjSRgqAJY1snzigVSiyMTha.png") }}');
+				$('#y-bitu').attr('src','/img/1GhgvwxA7VRYjSRgqAJY1snzigVSiyMTha.png');
 				$('#y-bilian').text(btclink);
 			}else if(biming.toLocaleUpperCase() == 'SOL'){
-				$('#y-bitu').attr('src','{{ asset("img/8k8iqK5m1dUWoENzZNPrgSSh746rkoPb2e8xiL8nz6Ya.png") }}');
+				$('#y-bitu').attr('src','/img/8k8iqK5m1dUWoENzZNPrgSSh746rkoPb2e8xiL8nz6Ya.png');
 				$('#y-bilian').text(sollink);
 			}
 			else{
-				$('#y-bitu').attr('src','{{ asset("img/0xd8dD63e1A50A54e43F13C5E559660872083Db59B.png") }}');
+				$('#y-bitu').attr('src','/img/0xd8dD63e1A50A54e43F13C5E559660872083Db59B.png');
 				$('#y-bilian').text(ethlink);
 			}
 

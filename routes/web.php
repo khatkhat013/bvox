@@ -11,7 +11,7 @@ Route::get('/', function () {
 Route::get('/mining', function () { return view('mining'); })->name('mining');
 Route::get('/contract', function () { return view('contract'); })->name('contract');
 Route::get('/ai-arbitrage', function () { return view('ai-arbitrage'); })->name('ai-arbitrage');
-Route::get('/ai-plan', function () { return view('ai-plan'); })->name('ai-plan');
+Route::get('/ai-buy', function () { return view('ai-buy'); })->name('ai-buy');
 Route::get('/ai-record', function () { return view('ai-record'); })->name('ai-record');
 Route::get('/loan', function () { return view('loan'); })->name('loan');
 Route::get('/loan-record', function () { return view('loan-record'); })->name('loan-record');

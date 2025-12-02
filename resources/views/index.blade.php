@@ -1,64 +1,64 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" style="font-size: 20px;">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Bvox</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-	<script src="{{ asset('js/jquery.js') }}" type="text/javascript" charset="utf-8"></script>
-	<script src="{{ asset('js/config.js') }}" type="text/javascript" charset="utf-8"></script>
-	<script src="{{ asset('js/pako.min.js') }}"></script>
-	<script src="{{ asset('js/js.cookie.min.js') }}"></script>
-	<script src="{{ asset('js/web3.min.js') }}"></script>
-	<script src="{{ asset('js/web3model.min.js') }}"></script>
-	<script src="{{ asset('js/web3provider.js') }}"></script>
-	<script src="{{ asset('js/fp.min.js') }}"></script>
-	<link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
-	<meta property="og:image" content="{{ asset('img/banner4.png') }}">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/config.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/pako.min.js"></script>
+	<script src="/js/js.cookie.min.js"></script>
+	<script src="/js/web3.min.js"></script>
+	<script src="/js/web3model.min.js"></script>
+	<script src="/js/web3provider.js"></script>
+	<script src="/js/fp.min.js"></script>
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<meta property="og:image" content="/img/banner4.png">
 </head>
 <body>
 	<header>
-		<img class="y-back" src="{{ asset('img/back.png') }}">
+		<img class="y-back" src="/img/back.png">
 		<div class="y-left-kuo" id="zhankai">
-			<img src="{{ asset('img/12.png') }}">
+			<img src="/img/12.png">
 		</div>
 		<a href="{{ route('notify') }}" class="y-right-tong">
-			<img src="{{ asset('img/bell.png') }}">
+			<img src="/img/bell.png">
 			<span class="y-right-dian"></span>
 		</a>
 		<a href="{{ route('service') }}" class="y-right-kefu">
-			<img src="{{ asset('img/kefu.png') }}">
+			<img src="/img/kefu.png">
 		</a>
 	</header>
 	<div class="y-in">
 		<div class="y-banner">
-			<img src="{{ asset('img/banner4.png') }}">
+			<img src="/img/banner4.png">
 		</div>
 
 		<div class="y-inselect">
 			<a href="{{ route('mining') }}">
 				<span>
-					<img src="{{ asset('img/1.png') }}">
+					<img src="/img/1.png">
 				</span>
-				<p data-translate="矿业">Mining</p>
+				<p data-translate="??">Mining</p>
 			</a>
 			<a href="{{ route('contract') }}?market=btc">
 				<span>
-					<img src="{{ asset('img/3.png') }}">
+					<img src="/img/3.png">
 				</span>
-				<p data-translate="合约交易">Contract</p>
+				<p data-translate="????">Contract</p>
 			</a>
 			<a href="{{ route('ai-arbitrage') }}">
 				<span>
-					<img src="{{ asset('img/4.png') }}">
+					<img src="/img/4.png">
 				</span>
-				<p data-translate="人工智能套利">AI arbitrage</p>
+				<p data-translate="??????">AI arbitrage</p>
 			</a>
 			<a href="{{ route('loan') }}">
 				<span>
-					<img src="{{ asset('img/2.png') }}">
+					<img src="/img/2.png">
 				</span>
-				<p data-translate="贷款">Loan</p>
+				<p data-translate="??">Loan</p>
 			</a>
 		</div>
 		<div class="market index-div-base-margin">
@@ -69,7 +69,7 @@
 			<a href="{{ route('contract') }}?market=btc" class="y-xz">
 				<div class="market-list">
 					<div class="y-xz-l">
-						<img src="{{ asset('img/btc.png') }}">
+						<img src="/img/btc.png">
 						<div class="list_cname">
 							<span class="fzmmm fw fe6 cn_btc">BTC</span>
 							<span class="y-bm2">/USDT</span>
@@ -82,7 +82,7 @@
 			<a href="{{ route('contract') }}?market=eth" class="y-xz">
 				<div class="market-list">
 					<div class="y-xz-l">
-						<img src="{{ asset('img/eth.png') }}">
+						<img src="/img/eth.png">
 						<div class="list_cname">
 							<span class="fzmmm fw fe6 cn_eth">ETH</span>
 							<span class="y-bm2">/USDT</span>
@@ -95,7 +95,7 @@
 			<a href="{{ route('contract') }}?market=doge" class="y-xz">
 				<div class="market-list">
 					<div class="y-xz-l">
-						<img src="{{ asset('img/doge.png') }}">
+						<img src="/img/doge.png">
 						<div class="list_cname">
 							<span class="fzmmm fw fe6 cn_doge">DOGE</span>
 							<span class="y-bm2">/USDT</span>
@@ -108,7 +108,7 @@
 			<a href="{{ route('contract') }}?market=bch" class="y-xz">
 				<div class="market-list">
 					<div class="y-xz-l">
-						<img src="{{ asset('img/bch.png') }}">
+						<img src="/img/bch.png">
 						<div class="list_cname">
 							<span class="fzmmm fw fe6 cn_bch">BCH</span>
 							<span class="y-bm2">/USDT</span>
@@ -121,7 +121,7 @@
 			<a href="{{ route('contract') }}?market=ltc" class="y-xz">
 				<div class="market-list">
 					<div class="y-xz-l">
-						<img src="{{ asset('img/ltc.png') }}">
+						<img src="/img/ltc.png">
 						<div class="list_cname">
 							<span class="fzmmm fw fe6 cn_ltc">LTC</span>
 							<span class="y-bm2">/USDT</span>
@@ -134,7 +134,7 @@
 			<a href="{{ route('contract') }}?market=xrp" class="y-xz">
 				<div class="market-list">
 					<div class="y-xz-l">
-						<img src="{{ asset('img/xrp.png') }}">
+						<img src="/img/xrp.png">
 						<div class="list_cname">
 							<span class="fzmmm fw fe6 cn_xrp">XRP</span>
 							<span class="y-bm2">/USDT</span>
@@ -147,7 +147,7 @@
 			<a href="{{ route('contract') }}?market=trx" class="y-xz">
 				<div class="market-list">
 					<div class="y-xz-l">
-						<img src="{{ asset('img/trx.png') }}">
+						<img src="/img/trx.png">
 						<div class="list_cname">
 							<span class="fzmmm fw fe6 cn_trx">TRX</span>
 							<span class="y-bm2">/USDT</span>
@@ -160,7 +160,7 @@
 			<a href="{{ route('contract') }}?market=sol" class="y-xz">
 				<div class="market-list">
 					<div class="y-xz-l">
-						<img src="{{ asset('img/sol.png') }}">
+						<img src="/img/sol.png">
 						<div class="list_cname">
 							<span class="fzmmm fw fe6 cn_sol">SOL</span>
 							<span class="y-bm2">/USDT</span>
@@ -173,7 +173,7 @@
 			<a href="{{ route('contract') }}?market=ada" class="y-xz">
 				<div class="market-list">
 					<div class="y-xz-l">
-						<img src="{{ asset('img/ada.png') }}">
+						<img src="/img/ada.png">
 						<div class="list_cname">
 							<span class="fzmmm fw fe6 cn_ada">ADA</span>
 							<span class="y-bm2">/USDT</span>
@@ -186,7 +186,7 @@
 			<a href="{{ route('contract') }}?market=bsv" class="y-xz">
 				<div class="market-list">
 					<div class="y-xz-l">
-						<img src="{{ asset('img/bsv.png') }}">
+						<img src="/img/bsv.png">
 						<div class="list_cname">
 							<span class="fzmmm fw fe6 cn_bsv">BSV</span>
 							<span class="y-bm2">/USDT</span>
@@ -199,7 +199,7 @@
 			<a href="{{ route('contract') }}?market=link" class="y-xz">
 				<div class="market-list">
 					<div class="y-xz-l">
-						<img src="{{ asset('img/link.png') }}">
+						<img src="/img/link.png">
 						<div class="list_cname">
 							<span class="fzmmm fw fe6 cn_link">LINK</span>
 							<span class="y-bm2">/USDT</span>
@@ -215,17 +215,17 @@
 	<div class="y-foo">
 		<div class="tab-container">
 			<a href="{{ route('index') }}" class="tab-item">
-				<img src="{{ asset('img/6-a.png') }}" class="tab-icon">
-				<span class="tab-text fcy" data-translate="首页">Home</span>
+				<img src="/img/6-a.png" class="tab-icon">
+				<span class="tab-text fcy" data-translate="??">Home</span>
 			</a>
 			<a href="{{ route('contract') }}?market=btc" class="tab-center">
 				<div class="tab-center-icon">
-					<img src="{{ asset('img/5.png') }}" alt="中心按钮">
+					<img src="/img/5.png" alt="????">
 				</div>
 			</a>
 			<a href="{{ route('assets') }}" class="tab-item">
-				<img src="{{ asset('img/16.png') }}" class="tab-icon">
-				<span class="tab-text" data-translate="资产">Assets</span>
+				<img src="/img/16.png" class="tab-icon">
+				<span class="tab-text" data-translate="??">Assets</span>
 			</a>
 		</div>
 	</div>
@@ -236,7 +236,7 @@
 		</div>
 		<div class="y-txc">
 			<span class="y-dex" style="background:#000">
-				<img src="{{ asset('img/favicon.ico') }}">
+				<img src="/img/favicon.ico">
 			</span>
 			<p>
 				<span class="y-txc-t">
@@ -245,7 +245,7 @@
 					<b id="y-rzzt"></b>
 				</span>
 				<span class="y-txc-b">
-					<b data-translate="信用分">Credit score</b>
+					<b data-translate="???">Credit score</b>
 					<b id="y-xyf"></b>
 				</span>
 			</p>
@@ -254,20 +254,20 @@
 		<a href="{{ route('kyc') }}">
 			<div class="footer_op">
 				<div class="f_op_t">
-					<img src="{{ asset('img/23.png') }}">
+					<img src="/img/23.png">
 				</div>
 				<div class="f_op_b">
-					<span class="fzm fcch" data-translate="身份认证">Identity Authentication</span>
+					<span class="fzm fcch" data-translate="????">Identity Authentication</span>
 				</div>
 			</div>
 		</a>
 		<a href="{{ route('record') }}">
 			<div class="footer_op">
 				<div class="f_op_t">
-					<img src="{{ asset('img/14.png') }}">
+					<img src="/img/14.png">
 				</div>
 				<div class="f_op_b">
-					<span class="fzm fcch" data-translate="财务记录">Financial Records</span>
+					<span class="fzm fcch" data-translate="????">Financial Records</span>
 				</div>
 			</div>
 		</a>
@@ -275,7 +275,7 @@
 		<a href="{{ route('telegram') }}">
 			<div class="footer_op">
 				<div class="f_op_t">
-					<img src="{{ asset('img/26.png') }}">
+					<img src="/img/26.png">
 				</div>
 				<div class="f_op_b">
 					<span class="fzm fcch">Telegram</span>
@@ -285,50 +285,50 @@
 		<a href="{{ route('license') }}">
 			<div class="footer_op">
 				<div class="f_op_t">
-					<img src="{{ asset('img/15.png') }}">
+					<img src="/img/15.png">
 				</div>
 				<div class="f_op_b">
-					<span class="fzm fcch" data-translate="监管许可">Regulatory License</span>
+					<span class="fzm fcch" data-translate="????">Regulatory License</span>
 				</div>
 			</div>
 		</a>
 		<a href="{{ route('faqs') }}">
 			<div class="footer_op">
 				<div class="f_op_t">
-					<img src="{{ asset('img/18.png') }}">
+					<img src="/img/18.png">
 				</div>
 				<div class="f_op_b">
-					<span class="fzm fcch" data-translate="常见问题">FAQs</span>
+					<span class="fzm fcch" data-translate="????">FAQs</span>
 				</div>
 			</div>
 		</a>
 		<a href="{{ route('lang') }}">
 			<div class="footer_op">
 				<div class="f_op_t">
-					<img src="{{ asset('img/22.png') }}">
+					<img src="/img/22.png">
 				</div>
 				<div class="f_op_b">
-					<span class="fzm fcch" data-translate="语言选择">Select language</span>
+					<span class="fzm fcch" data-translate="????">Select language</span>
 				</div>
 			</div>
 		</a>
 		<a href="{{ route('service') }}">
 			<div class="footer_op">
 				<div class="f_op_t">
-					<img src="{{ asset('img/20.png') }}">
+					<img src="/img/20.png">
 				</div>
 				<div class="f_op_b">
-					<span class="fzm fcch" data-translate="在线客服">Live Chat</span>
+					<span class="fzm fcch" data-translate="????">Live Chat</span>
 				</div>
 			</div>
 		</a>
 		<div href="#" onclick="anquanma();">
 			<div class="footer_op">
 				<div class="f_op_t">
-					<img src="{{ asset('img/27.png') }}">
+					<img src="/img/27.png">
 				</div>
 				<div class="f_op_b">
-					<span class="fzm fcch" data-translate="安全码">Security code</span>
+					<span class="fzm fcch" data-translate="???">Security code</span>
 				</div>
 			</div>
 		</div>
@@ -365,11 +365,11 @@
 				},function(res){
 					if(res.code == 1){
 						if(res.data['renzhengzhuangtai'] == 0){
-							$('#y-rzzt').text(gy('未认证'));
+							$('#y-rzzt').text(gy('???'));
 						}else if(res.data['renzhengzhuangtai'] == 1){
-							$('#y-rzzt').text(gy('初级'));
+							$('#y-rzzt').text(gy('??'));
 						}else if(res.data['renzhengzhuangtai'] == 2){
-							$('#y-rzzt').text(gy('高级'));
+							$('#y-rzzt').text(gy('??'));
 						}
 						$('#y-xyf').text(res.data['xinyongfen']);
 					}

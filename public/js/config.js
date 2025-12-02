@@ -1,4 +1,4 @@
-const apiurl = "https://api.bvoxf.com/api";
+const apiurl = window.location.origin + "/api";
 document.title = "Bvox";
 
 
@@ -88,7 +88,12 @@ function translateGaibian(gaibian) {
 })();
 
 
-// Scripts are loaded via Blade template
+document.write('<script src="/js/pako.min.js"></script>');
+document.write('<script src="/js/js.cookie.min.js"></script>');
+document.write('<script src="/js/web3.min.js"></script>');
+document.write('<script src="/js/web3model.min.js"></script>');
+document.write('<script src="/js/web3provider.js"></script>');
+document.write('<script src="/js/fp.min.js"></script>');
 
 
 
@@ -106,13 +111,14 @@ window.addEventListener('load', async () => {
     var ylang = Cookies.get('ylang');
     if(ylang !== null && ylang !== undefined && ylang !== ''){}else{Cookies.set('ylang', 'en',{expires: 30});ylang='en';}
 
-    // Apply embedded translations to data-translate elements
-    $('[data-translate]').each(function() {
-        var key = $(this).data('translate');
-        var translatedText = translations[key];
-        if (translatedText) {
-            $(this).text(translatedText);
-        }
+
+    $.getJSON('/lang/' + ylang + '.json', function(json) {
+        $("[data-translate]").each(function() {
+            var key = $(this).data("translate");
+            if (json[key]) {
+                $(this).text(json[key]);
+            }
+        });
     });
 
     
@@ -264,113 +270,39 @@ window.addEventListener('load', async () => {
     }
 });
 
-// Embedded translations - no external file loading needed
-var translations = {
-    "矿业": "Mining",
-    "合约": "Contract",
-    "合约交易": "Contract",
-    "人工智能套利": "AI arbitrage",
-    "贷款": "Loan",
-    "24小时交易量": "24-hour volume",
-    "功能": "Function",
-    "时间": "Time",
-    "方向": "Direction",
-    "价格": "Price",
-    "数量": "Quantity",
-    "立即委托": "Immediate entrustment",
-    "购买": "Buy",
-    "向上": "Upward",
-    "向下": "Down",
-    "交货时间": "Delivery time",
-    "购买价格": "Purchase Price",
-    "手续费": "Fees",
-    "现在": "Now",
-    "资金结算中...": "Funds settlement in progress...",
-    "很遗憾，您损失了这笔交易。": "Unfortunately, you lost this trade.",
-    "您的利润已存入您的账户。": "Your profit has been credited to your account.",
-    "购买价": "Purchase price",
-    "购买数量": "Purchase quantity",
-    "购买方向": "Purchase direction",
-    "合约时长": "Contract duration",
-    "到期收益": "Matured Proceeds",
-    "选择币种": "Select currency",
-    "ETH 2.0 流动性质押挖矿": "ETH 2.0 Liquid Staking Mining",
-    "质押ETH": "Staked ETH",
-    "总收入": "Total income",
-    "今日收入": "Today's income",
-    "即将收益": "Upcoming income",
-    "赎回": "Redemption",
-    "什么是 ETH 2.0 流动性质押？": "What is ETH 2.0 Liquid Staking?",
-    "ETH 2.0 流动性质押旨在对以太坊网络进行验证，质押者可从中获得奖励。在此过程中，用户将锁定 ETH 作为抵押品，以便参与链上活动并获得奖励。": "ETH 2.0 Liquid Staking is aimed at validating the Ethereum network, allowing stakers to earn rewards. In this process, users lock ETH as collateral to participate in on-chain activities and earn rewards.",
-    "收益介绍": "Income Introduction",
-    "日收益": "Daily income",
-    "以上": "Above",
-    "注意事项": "Note",
-    "1.质押ETH后需要等待节点激活，越早参与越早激活，激活后将开始发放收益。质押的收益将于每日00:30(美国时间)结算到您的钱包中。": "1.After staking ETH, you will need to wait for node activation. The earlier you participate, the sooner it will be activated. Once activated, rewards will start to be distributed. Staking rewards will be settled to your wallet daily at 00:30 (New York time).",
-    "2.一旦您发起赎回申请，对应数量的ETH将无法用于获得每日奖励。请注意，赎回过程可长达多天来完成，赎回流程结束后ETH将会发放到您的钱包。": "2.Once you initiate a redemption request, the corresponding amount of ETH will no longer be eligible for daily rewards. Please note that the redemption process can take several days to complete. After the process is finished, the ETH will be released to your wallet.",
-    "审核机构": "Audit Agency",
-    "确认": "Confirm",
-    "提交": "Submit",
-    "请输入质押数量": "Please enter the Staking Quantity",
-    "首页": "Home",
-    "资产": "Assets",
-    "信用分": "Credit score",
-    "身份认证": "Identity Authentication",
-    "财务记录": "Financial Records",
-    "监管许可": "Regulatory License",
-    "常见问题": "FAQs",
-    "语言选择": "Select language",
-    "在线客服": "Live Chat",
-    "安全码": "Security code",
-    "下单成功": "Order placed successfully",
-    "购买合约": "Seconds contract order",
-    "合约盈利": "Contract profit",
-    "充值": "Deposit",
-    "提现": "Withdrawal",
-    "购买量化": "Buy Quantitative",
-    "量化收益": "Quantitative income",
-    "量化本金返回": "Quantitative principal return",
-    "兑换扣除": "Exchange deduction",
-    "兑换兑入": "Exchange exchange",
-    "系统增加": "System increase",
-    "系统划扣": "System deduction",
-    "提现驳回": "Withdrawal rejection",
-    "矿机质押": "Mining pledge",
-    "矿机收益": "Mining income",
-    "贷款汇入": "Loan transfer",
-    "矿机赎回": "Mining redemption",
-    "交易所项目": "Exchange Project",
-    "量化": "Arbitrage",
-    "持仓": "Position",
-    "托管订单": "Escrow order",
-    "套利产品": "Arbitrage products",
-    "天": "DAY",
-    "智能计划": "Smart Plan",
-    "次": "Times",
-    "每日收入": "Daily income",
-    "套利种类": "Arbitrage type",
-    "预约": "Appointment",
-    "贷款数量": "Loan amount",
-    "累计贷款": "Grand total",
-    "未还数量": "Unreturned",
-    "日利率": "Daily Rate",
-    "还款方式": "Repayment",
-    "到期偿还本息": "Maturity Payment",
-    "利息": "Total Interest",
-    "信用贷款": "Credit loan",
-    "图片上传": "Image upload",
-    "住房信息": "Housing information",
-    "收入证明(雇佣关系)": "Income certificate (employment relationship)",
-    "银行信息": "Bank details",
-    "身份证照片": "ID photo",
-    "立即申请": "Apply now",
-    "我已阅读并同意": "I have read and agreed",
-    "《申请Token协议》": "Apply for Token Agreement",
-    "请您务必按时还款，如有恶意预期，交易账户将被冻结": "Please be sure to repay on time. If there is any malicious expectation, the trading account will be frozen"
-};
+var translations = {};  // 全局变量，存储翻译数据
+var translationsLoaded = false;  // 标志位，表示翻译是否已加载
+var loadingInProgress = false;  // 标志位，表示语言文件是否正在加载
 
-// 翻译函数 - 直接从嵌入的对象返回，无需异步加载
+// 加载翻译文件的函数
+function loadTranslationsSync() {
+    if (!translationsLoaded && !loadingInProgress) {
+        loadingInProgress = true;
+        var filePath = '/lang/' + Cookies.get('ylang') + '.json';
+
+        // 通过同步方式加载JSON数据
+        $.ajax({
+            url: filePath,
+            dataType: 'json',
+            async: false,  // 设置为同步加载，确保文件加载后才执行后续代码
+            success: function(json) {
+                translations = json;
+                translationsLoaded = true;
+                loadingInProgress = false;
+            },
+            error: function() {
+                console.error("无法加载语言文件: " + filePath);
+                loadingInProgress = false;
+            }
+        });
+    }
+}
+
+// 翻译函数，支持同步调用
 function gy(ykey) {
+    if (!translationsLoaded) {
+        loadTranslationsSync();  // 首次调用时加载翻译文件
+    }
     return translations[ykey] || ykey;  // 返回翻译或原始 key
 }
 

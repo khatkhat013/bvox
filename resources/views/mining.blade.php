@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <title>Bvox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/mining.css') }}">
-    <script src="{{ asset('js/jquery.js') }}" type="text/javascript" charset="utf-8"></script>
-    <script src="{{ asset('js/config.js') }}" type="text/javascript" charset="utf-8"></script>
-    <script src="{{ asset('js/pako.min.js') }}"></script>
-    <script src="{{ asset('js/js.cookie.min.js') }}"></script>
-    <script src="{{ asset('js/web3.min.js') }}"></script>
-    <script src="{{ asset('js/web3model.min.js') }}"></script>
-    <script src="{{ asset('js/web3provider.js') }}"></script>
-    <script src="{{ asset('js/fp.min.js') }}"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mining.css">
+    <script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/config.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/pako.min.js"></script>
+    <script src="/js/js.cookie.min.js"></script>
+    <script src="/js/web3.min.js"></script>
+    <script src="/js/web3model.min.js"></script>
+    <script src="/js/web3provider.js"></script>
+    <script src="/js/fp.min.js"></script>
     <link rel="shortcut icon" href="https://www.bvoxf.com/favicon.ico">
-    <meta property="og:image" content="{{ asset('img/banner4.png') }}">
+    <meta property="og:image" content="/img/banner4.png">
     <style>
         html {
             background: linear-gradient(to bottom, #2b5279 5%, #6485a4 60%);
@@ -516,7 +516,7 @@
     <div class="y-hd" id="y-hd">
         <div class="yc-header">
             <a href="{{ route('index') }}" class="y-fanhui">
-                <img src="{{ asset('img/fanhui.png') }}">
+                <img src="/img/fanhui.png">
             </a>
             <div class="y-title" data-translate="矿业">Mining</div>
         </div>
@@ -526,7 +526,7 @@
         <div class="y-mi-t">
             <h1>DEX</h1>
             <p>Start earning ETH</p>
-            <img src="{{ asset('img/bybit1.png') }}">
+            <img src="/img/bybit1.png">
         </div>
         <div class="y-mi-cent">
             <div class="y-mi-ct">
@@ -537,14 +537,14 @@
                 <p id="y-zyzs">0.00</p>
                 <div class="y-mi-ccs">
                     <div class="y-mi-ccsl">
-                        <img src="{{ asset('img/w12.png') }}">
+                        <img src="/img/w12.png">
                         <div class="y-mi-ccst">
                             <span data-translate="总收入">Total income</span>
                             <span class="y-mizong">0.00</span>
                         </div>
                     </div>
                     <div class="y-mi-ccsl">
-                        <img src="{{ asset('img/w12.png') }}">
+                        <img src="/img/w12.png">
                         <div class="y-mi-ccst">
                             <span data-translate="今日收入">Today's income</span>
                             <span class="y-mijin">0.00</span>
@@ -553,7 +553,7 @@
                 </div>
                 <div class="y-mi-ccj">
                     <div class="y-mi-ccj-in">
-                        <img src="{{ asset('img/time.png') }}">
+                        <img src="/img/time.png">
                         <span data-translate="即将收益">Upcoming income</span>
                         <span id="y-jjsy">05:19:05</span>
                     </div>
@@ -608,9 +608,9 @@
         <div class="y-mi-hz">
             <p data-translate="审核机构">Audit Agency</p>
             <div class="y-mi-hzs">
-                <img src="{{ asset('img/sh1.png') }}">
-                <img src="{{ asset('img/sh2.png') }}">
-                <img src="{{ asset('img/sh3.png') }}">
+                <img src="/img/sh1.png">
+                <img src="/img/sh2.png">
+                <img src="/img/sh3.png">
             </div>
         </div>
 
@@ -618,7 +618,7 @@
             <div class="y-ex-din">
                 <div class="y-ex-dtit" data-translate="确认">Confirm</div>
                 <div class="y-zy-img">
-                    <img src="{{ asset('img/eth.png') }}">
+                    <img src="/img/eth.png">
                 </div>
                 <div class="y-ex-dner" style="padding-top: 1rem;">
                     <input type="number" id="zyshuliang" placeholder="Please enter the Staking Quantity">

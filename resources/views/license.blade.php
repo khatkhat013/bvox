@@ -16,7 +16,7 @@
     <script src="/js/fp.min.js"></script>
     <link rel="shortcut icon" href="https://www.bvoxf.com/favicon.ico">
     <meta property="og:image" content="/favicon.png">
-    <link rel="manifest" href="https://www.bvoxf.com/manifest.json">
+
     <style>
         html{
             background: #FFF;
